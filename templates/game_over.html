@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Over</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #ffcccb;
+            color: #333;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            color: #b22222;
+        }
+        p {
+            margin: 20px 0;
+        }
+        a {
+            display: inline-block;
+            margin: 20px;
+            padding: 10px 20px;
+            background: #b22222;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        a:hover {
+            background: #ff6347;
+        }
+        img { 
+            max-width: 300px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Game Over</h1>
+    <p>Thanks for playing! You collected {{ doubloons }} doubloons.</p>
+    <img src="static/images/game-over.png" alt="Game Over">
+    <br>
+    <a href="/">Play Again</a>
+</body>
+</html>

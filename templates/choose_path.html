@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose Your Path</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color:cadetblue;
+            color: #333;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            color: #ffcc00;
+        }
+        img {
+            max-width: 200px;
+            margin: 20px;
+            cursor: pointer;
+        }
+        button {
+            display: inline-block;
+            border: none;
+            background: none;
+            padding: 0;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Choose Your Path</h1>
+    <p>Which way will lead you to fortune?</p>
+    <form method="POST">
+        <button name="path" value="1">
+            <img src="{{ url_for('static', filename='images/path-1.jpg') }}" alt="Path 1">
+        </button>
+        <button name="path" value="2">
+            <img src="{{ url_for('static', filename='images/path-2.jpg') }}" alt="Path 2">
+        </button>
+    </form>
+</body>
+</html>

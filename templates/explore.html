@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #98fb98;
+            color: #333;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            color: #d2691e;
+        }
+        img {
+            max-width: 300px;
+            margin: 20px 0;
+        }
+        p {
+            margin: 20px 0;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #8b4513;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 10px;
+        }
+        button:hover {
+            background-color: #a0522d;
+        }
+        .play-again-buttons {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Adventure Outcome</h1>
+    <p>{{ result }}</p>
+    <p>You have {{ doubloons }} doubloons.</p>
+    <div class="play-again-buttons">
+        <form method="POST" action="/play-again">
+            <button name="yes" type="submit">Play Again</button>
+            <button name="no" type="submit">End Game</button>
+        </form>
+    </div>
+</body>
+</html>
+
